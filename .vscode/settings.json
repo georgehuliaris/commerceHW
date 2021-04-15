@@ -2,6 +2,10 @@
     "cSpell.ignoreWords": [
         "ecommerce",
         "jawsdb",
+        "sequelize",
         "url"
+    ],
+    "cSpell.words": [
+        "sequelize"
     ]
 }
