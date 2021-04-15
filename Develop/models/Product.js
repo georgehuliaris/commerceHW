@@ -42,7 +42,41 @@ Product.init(
         unique: false,
       },
     },
+    tag: {
+      id: {
+        type: DataTypes.INT,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true,
+      },
+    },
+    tag_name: {
+      type: DataTypes.STR,
+    },
+    ProductTag: {
+      id: {
+        type: DataTypes.INT,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true,
+      },
+    },
+    product_id: {
+      type: DataTypes.INT,
+      references: {
+        model: "Tag",
+        key: "id",
+      },
+    },
+    tag_id: {
+      type: DataTypes.INT,
+      references: {
+        model: "Tag",
+        key: "id",
+      }
+    }
   },
+
   {
     sequelize,
     timestamps: false,
