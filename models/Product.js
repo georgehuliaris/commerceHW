@@ -42,32 +42,7 @@ Product.init(
         unique: false,
       },
     },
-    // these need to be in other files
-    // tag: {
-    //   id: {
-    //     type: DataTypes.INT,
-    //     allowNull: false,
-    //     primaryKey: true,
-    //     autoIncrement: true,
-    //   },
-    // },
-    // tag_name: {
-    //   type: DataTypes.STR,
-    // },
-    // product_id: {
-    //   type: DataTypes.INT,
-    //   references: {
-    //     model: "Tag",
-    //     key: "id",
-    //   },
-    // },
-    // tag_id: {
-    //   type: DataTypes.INT,
-    //   references: {
-    //     model: "Tag",
-    //     key: "id",
-    //   }
-    // }
+    
   },
 
   {
